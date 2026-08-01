@@ -72,15 +72,31 @@ traveltime_comparison notebook
 </p>
 
 <p align="center">
-  <b>Figure 3.</b> (a) Real checkerboard velocity model, (b) Initial constant velocity model, and (c) Inverted velocity model using DISC method.
+  <b>Example 3.</b> Crosswell geometry. (a) Real checkerboard velocity model, (b) Initial constant velocity model, and (c) Inverted velocity model using DISC method. The figure can be reproduced using the
+<a href="https://github.com/ChaoDeepGeo/DISCtomo/blob/main/notebook/main_checkboarder.ipynb">
+checkboarder notebook
+</a>.
 </p>
 
 <p align="center">
-  <img src="Figure/saltinv.png" width="850"/>
+  <img src="Figure/marm_surface.png" width="850"/>
 </p>
 
 <p align="center">
-  <b>Figure 4.</b> (a) Real saltbody model, (b) Initial saltbody model, and (c) Inversion result of DISC.
+  <b>Example 4.</b> Surface geometry (active source). (a) Real Marmousi model, (b) Initial Marmousi model, and (c) Inversion result of DISC. The figure can be reproduced using the
+<a href="https://github.com/ChaoDeepGeo/DISCtomo/blob/main/notebook/main_surface_active.ipynb">
+surface_active notebook
+</p>
+
+
+<p align="center">
+  <img src="Figure/fault_passive.png" width="850"/>
+</p>
+
+<p align="center">
+  <b>Example 5.</b> Surface geometry (active source). (a) Real fault model, (b) Initial fault model, and (c) Inversion result of DISC. The figure can be reproduced using the
+<a href="https://github.com/ChaoDeepGeo/DISCtomo/blob/main/notebook/main_surface_passive.ipynb">
+surface_passive notebook
 </p>
 
 <p align="center">
