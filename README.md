@@ -160,7 +160,7 @@ crosswell_3D notebook
 </p>
 
 <p align="center">
-  <b>Figure 6.</b> Inversion result comparison of 3D model for passive sources. (a) Real 3D model. (b) Initial 3D model. (c) Inverted 3D model via DISC method.  The figure can be reproduced using the
+  <b>Example 7.</b> Inversion result comparison of 3D model for passive sources. (a) Real 3D model. (b) Initial 3D model. (c) Inverted 3D model via DISC method.  The figure can be reproduced using the
 <a href="https://github.com/ChaoDeepGeo/DISCtomo/blob/main/notebook/main_3Dmodel_passive.ipynb">
 surface_3D notebook
 </p>
@@ -173,7 +173,7 @@ surface_3D notebook
 </p>
 
 <p align="center">
-  <b>Figure 7.</b> Generated initial particles used for SVGD DISC inverison.
+  <b>Example 8.</b> Generated initial particles used for SVGD DISC inverison.
 </p>
 
 
@@ -185,7 +185,7 @@ surface_3D notebook
 </p>
 
 <p align="center">
-  <b>Figure 8.</b> (a) Real checkerboard model, (b) Estimated Vp mean value distribution using SVGD DISC, and (c) Estimated Vp std map (uncertainty distribution). Higher std value means more uncertainties.
+  <b>Example 9.</b> (a) Real checkerboard model, (b) Estimated Vp mean value distribution using SVGD DISC, and (c) Estimated Vp std map (uncertainty distribution). Higher std value means more uncertainties.
 </p>
 
 
