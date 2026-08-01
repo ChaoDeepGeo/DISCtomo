@@ -83,7 +83,6 @@ The workflow of DISC consists of the following main steps:
 <p align="center">
   <img
   src="https://raw.githubusercontent.com/ChaoDeepGeo/DISCtomo/main/Figure/timecomp.png"
-  alt="Schematic illustration of the DISC framework"
   width="850"
 />
 </p>
@@ -98,7 +97,6 @@ traveltime_comparison notebook
 <p align="center">
   <img
   src="https://raw.githubusercontent.com/ChaoDeepGeo/DISCtomo/main/Figure/checkinv.png"
-  alt="Schematic illustration of the DISC framework"
   width="850"
    />    
 </p>
@@ -113,7 +111,6 @@ checkboarder notebook
 <p align="center">
     <img
   src="https://raw.githubusercontent.com/ChaoDeepGeo/DISCtomo/main/Figure/marm_surface.png"
-  alt="Schematic illustration of the DISC framework"
   width="850"
    />
 </p>
@@ -129,7 +126,6 @@ surface_active notebook
 <p align="center">
   <img
   src="https://raw.githubusercontent.com/ChaoDeepGeo/DISCtomo/main/Figure/fault_passive.png"
-  alt="Schematic illustration of the DISC framework"
   width="850"
    />  
 </p>
@@ -142,10 +138,8 @@ surface_passive notebook
 </p>
 
 <p align="center">
-  <img src="Figure/syn3dinv.png" width="850"/>
    <img
   src="https://raw.githubusercontent.com/ChaoDeepGeo/DISCtomo/main/Figure/syn3dinv.png"
-  alt="Schematic illustration of the DISC framework"
   width="850"
    />  
     
@@ -159,7 +153,10 @@ crosswell_3D notebook
 </p>
 
 <p align="center">
-  <img src="Figure/syn3dpass.png" width="850"/>
+<img
+  src="https://raw.githubusercontent.com/ChaoDeepGeo/DISCtomo/main/Figure/syn3dpass.png"
+  width="850"
+   />  
 </p>
 
 <p align="center">
@@ -169,7 +166,10 @@ surface_3D notebook
 </p>
 
 <p align="center">
-  <img src="Figure/checkpar.png" width="850"/>
+     <img
+  src="https://raw.githubusercontent.com/ChaoDeepGeo/DISCtomo/main/Figure/checkpar.png"
+  width="850"
+   />  
 </p>
 
 <p align="center">
@@ -178,7 +178,10 @@ surface_3D notebook
 
 
 <p align="center">
-  <img src="Figure/checkasvgd.png" width="850"/>
+     <img
+  src="https://raw.githubusercontent.com/ChaoDeepGeo/DISCtomo/main/Figure/checkasvgd.png"
+  width="850"
+   />  
 </p>
 
 <p align="center">
