@@ -157,7 +157,7 @@ conda activate your_env_name
 
 ## Reference 
 
-> Li and Chen, 2026, Seismic Traveltime Tomography Using Direct Smoothness-Constrained Iterative Inversion, IEEE Transactions on Geoscience and Remote Sensing, 64, pp. 5909912.
+> Li and Chen, 2026, DISCtomo: A Python package for direct smoothness constrained seismic traveltime tomography and uncertainty analysis, Seismica, TBD, TBD, TBD.
 
 ### BibTex
 
@@ -165,13 +165,13 @@ conda activate your_env_name
 
 @ARTICLE{DISC2026,
   author={Li, Chao and Chen, Yangkang},
-  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
-  title={Seismic Traveltime Tomography Using Direct Smoothness-Constrained Iterative Inversion}, 
+  journal={Seismica}, 
+  title={DISCtomo: A Python package for direct smoothness constrained seismic traveltime tomography and uncertainty analysis}, 
   year={2026},
-  volume={64},
+  volume={TBD},
   number={},
-  pages={5909912-5909912},
-  doi={10.1109/TGRS.2026.3688440}
+  pages={TBD},
+  doi={TBD}
 }
 
 
