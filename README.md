@@ -19,6 +19,12 @@
 We develop a open-source Python library DISCtomo, a flexible, compact, and user-friendly package for tomography based velocity building and uncertainty evaluation. Different from classic ray-tracing- or Eikonal equation-based tomography, DISCtomo directly constructs the tomography ray-path matrix from a precomputed traveltime table. In addition, shaping regularization is employed to control model smoothness, while the conjugate gradient (CG) algorithm is used to further refine the inversion results. Specifically, DISCtomo includes ray path matrix (RPM) construction functions for both 2D and 3D scenarios, Stein variational gradient descent (SVGD) for tomography uncertainty evaluation, and provides implementations of 2D and 3D models. Users can reproduce our examples or solve their own problems by just defining the geometry and initial model. Numerical experiments shown in the manuscript validate that DISCtomo is a effective and scalable package, which can be used for tomography at different scales in practice. 
 
 ---
+## Copyright
+    The pyseistr developing team, 2021-present
+    
+-----------
+## License
+    MIT License  
 
 ## Framework
 
