@@ -18,6 +18,8 @@ dependencies = [
     "numpy",
     "scipy",
     "matplotlib",
+    "pyseistr",
+    "pyekfmm",
     "gstools"
 ]
 

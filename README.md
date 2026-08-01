@@ -212,7 +212,7 @@ conda activate your_env_name
 
 ```bibtex
 
-@ARTICLE{DISC2026,
+@ARTICLE{DISCtomo,
   author={Li, Chao and Chen, Yangkang},
   journal={Seismica}, 
   title={DISCtomo: A Python package for direct smoothness constrained seismic traveltime tomography and uncertainty analysis}, 
