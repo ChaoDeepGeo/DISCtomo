@@ -17,8 +17,8 @@ authors = [
 dependencies = [
     "numpy",
     "scipy",
-    "matplotlib"
-    "scikit-fmm"
+    "matplotlib",
+    "scikit-fmm",
     "gstools"
 ]
 
