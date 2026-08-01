@@ -18,6 +18,8 @@ dependencies = [
     "numpy",
     "scipy",
     "matplotlib"
+    "scikit-fmm"
+    "gstools"
 ]
 
 [project.urls]
