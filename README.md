@@ -54,7 +54,6 @@ or using Pypi
 <p align="center">
   <img
   src="https://raw.githubusercontent.com/ChaoDeepGeo/DISCtomo/main/Figure/sketch.png"
-  alt="Schematic illustration of the DISC framework"
   width="600"
 />
 </p>
