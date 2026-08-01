@@ -83,7 +83,7 @@ checkboarder notebook
 </p>
 
 <p align="center">
-  <b>Example 4.</b> Comparison of active source traveltime tomography results.  (a) True Marmousi velocity model. (b) Ray paths traced from the surface acquisition geometry. (c) Initial velocity model. (d) Reconstructed velocity model obtained using the DISC method. (e) Velocity model update after DISC inversion. The figure can be reproduced using the
+  <b>Example 4.</b> Comparison of active source traveltime tomography results. (a) True Marmousi velocity model. (b) Ray paths traced from the surface acquisition geometry. (c) Initial velocity model. (d) Reconstructed velocity model obtained using the DISC method. (e) Velocity model update after DISC inversion. The figure can be reproduced using the
 <a href="https://github.com/ChaoDeepGeo/DISCtomo/blob/main/notebook/main_surface_active.ipynb">
 surface_active notebook
   </a>.
