@@ -82,7 +82,11 @@ The workflow of DISC consists of the following main steps:
 ## Result
 
 <p align="center">
-  <img src="Figure/timecomp.png" width="850"/>
+  <img
+  src="https://raw.githubusercontent.com/ChaoDeepGeo/DISCtomo/main/Figure/timecomp.png"
+  alt="Schematic illustration of the DISC framework"
+  width="850"
+/>
 </p>
 
 <p align="center">
@@ -93,7 +97,11 @@ traveltime_comparison notebook
 </p>
 
 <p align="center">
-  <img src="Figure/checkinv.png" width="850"/>
+  <img
+  src="https://raw.githubusercontent.com/ChaoDeepGeo/DISCtomo/main/Figure/checkinv.png"
+  alt="Schematic illustration of the DISC framework"
+  width="850"
+   />    
 </p>
 
 <p align="center">
@@ -104,7 +112,11 @@ checkboarder notebook
 </p>
 
 <p align="center">
-  <img src="Figure/marm_surface.png" width="850"/>
+    <img
+  src="https://raw.githubusercontent.com/ChaoDeepGeo/DISCtomo/main/Figure/marm_surface.png"
+  alt="Schematic illustration of the DISC framework"
+  width="850"
+   />
 </p>
 
 <p align="center">
@@ -116,7 +128,11 @@ surface_active notebook
 
 
 <p align="center">
-  <img src="Figure/fault_passive.png" width="850"/>
+  <img
+  src="https://raw.githubusercontent.com/ChaoDeepGeo/DISCtomo/main/Figure/fault_passive.png"
+  alt="Schematic illustration of the DISC framework"
+  width="850"
+   />  
 </p>
 
 <p align="center">
@@ -128,6 +144,12 @@ surface_passive notebook
 
 <p align="center">
   <img src="Figure/syn3dinv.png" width="850"/>
+   <img
+  src="https://raw.githubusercontent.com/ChaoDeepGeo/DISCtomo/main/Figure/syn3dinv.png"
+  alt="Schematic illustration of the DISC framework"
+  width="850"
+   />  
+    
 </p>
 
 <p align="center">
