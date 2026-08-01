@@ -26,6 +26,20 @@ We develop a open-source Python library DISCtomo, a flexible, compact, and user-
 ## License
     MIT License  
 
+---
+
+## Install
+Using the latest version
+
+    git clone https://github.com/aaspip/pyseistr
+    cd DISCtomo
+    pip install -v -e .
+or using Pypi
+
+    pip install disctomo
+
+---
+
 ## Framework
 
 <p align="center">
