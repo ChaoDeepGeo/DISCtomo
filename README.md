@@ -27,7 +27,7 @@ We develop a open-source Python library DISCtomo, a flexible, compact, and user-
 </p>
 
 <p align="center">
-  <b>Figure 1.</b> A sketch of DISC for ray tracing from receiver position to source position. 
+  <b>Example 1.</b> A sketch of DISC for ray tracing from receiver position to source position. The figure can be reproduced via 
 </p>
 
 The workflow of DISC consists of the following main steps:
