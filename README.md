@@ -20,9 +20,9 @@ We develop a open-source Python library DISCtomo, a flexible, compact, and user-
 
 ---
 ## Copyright
-    The pyseistr developing team, 2021-present
+    The DISCtomo developing team, 2026-present
     
------------
+---
 ## License
     MIT License  
 
