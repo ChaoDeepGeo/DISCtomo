@@ -1,6 +1,5 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import skfmm
 from scipy.sparse import lil_matrix
 from scipy.sparse.linalg import lsqr
 import sys
