@@ -49,7 +49,7 @@ The workflow of DISC consists of the following main steps:
 ## Documents demonstration
 
 - The data folder contains necessary models and dataset used to reproduce the numerical results.
-- The Notebook folder contains necessary code to reproduce the tomography experiments, including checkerboard, saltbody, 3D anormal and ASVGD DISC for uncertain evaluation.
+- The Notebook folder contains necessary code to reproduce the tomography experiments with different geometries (e.g., crosswell and surface) for both active and passive source examples, including checkerboard, saltbody, 3D anormal and SVGD DISC for uncertain evaluation.
 - The disc folder constains all the necessary functions for DISC package.
 - DISC depends on the following external packages: 1. [Pyekfmm](https://github.com/aaspip/pyekfmm) 2. [Pyseistr](https://github.com/aaspip/pyseistr)
 
