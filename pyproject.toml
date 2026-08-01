@@ -18,7 +18,6 @@ dependencies = [
     "numpy",
     "scipy",
     "matplotlib",
-    "scikit-fmm",
     "gstools"
 ]
 
