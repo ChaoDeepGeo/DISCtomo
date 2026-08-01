@@ -102,19 +102,24 @@ surface_passive notebook
 </p>
 
 <p align="center">
-  <img src="Figure/syn3dini.png" width="850"/>
-</p>
-
-<p align="center">
-  <b>Figure 5.</b> (a) Real 3D velocity model, (b) Initial model used for DISC inversion, and (c) Ray paths estimated by DISC method.
-</p>
-
-<p align="center">
   <img src="Figure/syn3dinv.png" width="850"/>
 </p>
 
 <p align="center">
-  <b>Figure 6.</b> (a) Real 3D velocity model (ground truth) and (b) Inverted 3D result using DISC method. 
+  <b>Example 6.</b> Inversion result comparison of 3D model for activate sources. (a) Real 3D model. (b) Initial 3D model. (c) Inverted 3D model via DISC method. The figure can be reproduced using the
+<a href="https://github.com/ChaoDeepGeo/DISCtomo/blob/main/notebook/main_3Dmodel.ipynb">
+crosswell_3D notebook
+  </a>.
+</p>
+
+<p align="center">
+  <img src="Figure/syn3dpass.png" width="850"/>
+</p>
+
+<p align="center">
+  <b>Figure 6.</b> Inversion result comparison of 3D model for passive sources. (a) Real 3D model. (b) Initial 3D model. (c) Inverted 3D model via DISC method.  The figure can be reproduced using the
+<a href="https://github.com/ChaoDeepGeo/DISCtomo/blob/main/notebook/main_3Dmodel_passive.ipynb">
+surface_3D notebook
 </p>
 
 <p align="center">
