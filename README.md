@@ -61,7 +61,10 @@ The workflow of DISC consists of the following main steps:
 </p>
 
 <p align="center">
-  <b>Figure 2.</b> (a) Real velocity model, (b) Ray tracing using DISC method, (c) Observed traveltime calculated using Eikonal equation, (d) Estimated traveltime by DISC method, and (e) The traveltime difference bewteen Figures 2(c) and 2(d). 
+  <b>Example 2.</b> (a) Real velocity model, (b) Ray tracing using DISC method, (c) Observed traveltime calculated using Eikonal equation, (d) Estimated traveltime by DISC method, and (e) The traveltime difference bewteen Figures 2(c) and 2(d). The figure can be reproduced using the
+<a href="https://github.com/ChaoDeepGeo/DISCtomo/blob/main/notebook/main_traveltime_comp.ipynb">
+traveltime_comparison notebook
+</a>.
 </p>
 
 <p align="center">
