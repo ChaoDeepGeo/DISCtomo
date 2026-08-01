@@ -1,1 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
 
+[project]
+name = "disctomo"
+version = "0.1.0"
+description = "A Python package for DISC-based seismic tomography and ray tracing"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+
+authors = [
+    {name = "ChaoDeepGeo"}
+]
+
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib"
+]
+
+[project.urls]
+Homepage = "https://github.com/ChaoDeepGeo/DISCtomo"
+Repository = "https://github.com/ChaoDeepGeo/DISCtomo"
+Issues = "https://github.com/ChaoDeepGeo/DISCtomo/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["disc*"]
+exclude = ["notebook*", "Figure*"]
