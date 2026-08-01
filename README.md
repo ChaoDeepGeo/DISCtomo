@@ -28,6 +28,15 @@ We develop a open-source Python library DISCtomo, a flexible, compact, and user-
 
 ---
 
+## Documents demonstration
+
+- The data folder contains necessary models and dataset used to reproduce the numerical results.
+- The Notebook folder contains necessary code to reproduce the tomography experiments with different geometries (e.g., crosswell and surface) for both active and passive source examples, including checkerboard, saltbody, 3D anormal and SVGD DISC for uncertain evaluation.
+- The disc folder constains all the necessary functions for DISC package.
+- DISC depends on the following external packages: 1. [Pyekfmm](https://github.com/aaspip/pyekfmm) 2. [Pyseistr](https://github.com/aaspip/pyseistr)
+
+---
+
 ## Install
 Using the latest version
 
@@ -64,14 +73,6 @@ The workflow of DISC consists of the following main steps:
 4. Estimate the model update using CG iteration with shaping regularization and update the current model
 5. Repeat steps 1-4 until convergence.
 
----
-
-## Documents demonstration
-
-- The data folder contains necessary models and dataset used to reproduce the numerical results.
-- The Notebook folder contains necessary code to reproduce the tomography experiments with different geometries (e.g., crosswell and surface) for both active and passive source examples, including checkerboard, saltbody, 3D anormal and SVGD DISC for uncertain evaluation.
-- The disc folder constains all the necessary functions for DISC package.
-- DISC depends on the following external packages: 1. [Pyekfmm](https://github.com/aaspip/pyekfmm) 2. [Pyseistr](https://github.com/aaspip/pyseistr)
 
 ---
 ## Result
