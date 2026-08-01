@@ -52,7 +52,11 @@ or using Pypi
 ## Framework
 
 <p align="center">
-  <img src="Figure/sketch.png" width="600"/>
+  <img
+  src="https://raw.githubusercontent.com/ChaoDeepGeo/DISCtomo/main/Figure/sketch.png"
+  alt="Schematic illustration of the DISC framework"
+  width="600"
+/>
 </p>
 
 
