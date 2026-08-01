@@ -86,6 +86,7 @@ checkboarder notebook
   <b>Example 4.</b> Surface geometry (active source). (a) Real Marmousi model, (b) Initial Marmousi model, and (c) Inversion result of DISC. The figure can be reproduced using the
 <a href="https://github.com/ChaoDeepGeo/DISCtomo/blob/main/notebook/main_surface_active.ipynb">
 surface_active notebook
+  </a>.
 </p>
 
 
@@ -97,6 +98,7 @@ surface_active notebook
   <b>Example 5.</b> Surface geometry (active source). (a) Real fault model, (b) Initial fault model, and (c) Inversion result of DISC. The figure can be reproduced using the
 <a href="https://github.com/ChaoDeepGeo/DISCtomo/blob/main/notebook/main_surface_passive.ipynb">
 surface_passive notebook
+  </a>.
 </p>
 
 <p align="center">
