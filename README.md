@@ -173,7 +173,7 @@ surface_3D notebook
 </p>
 
 <p align="center">
-  <b>Figure 7.</b> Generated initial particles used for ASVGD DISC inverison. The geometry is same as that shown in Figure 3.
+  <b>Figure 7.</b> Generated initial particles used for SVGD DISC inverison.
 </p>
 
 
@@ -185,7 +185,7 @@ surface_3D notebook
 </p>
 
 <p align="center">
-  <b>Figure 8.</b> (a) Real checkerboard model, (b) Estimated Vp mean value distribution using ASVGD DISC, and (c) Estimated Vp std map (uncertainty distribution). Higher std value means more uncertainties.
+  <b>Figure 8.</b> (a) Real checkerboard model, (b) Estimated Vp mean value distribution using SVGD DISC, and (c) Estimated Vp std map (uncertainty distribution). Higher std value means more uncertainties.
 </p>
 
 
