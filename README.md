@@ -31,7 +31,7 @@ We develop a open-source Python library DISCtomo, a flexible, compact, and user-
 ## Install
 Using the latest version
 
-    git clone https://github.com/aaspip/pyseistr
+    git clone https://github.com/ChaoDeepGeo/DISCtomo
     cd DISCtomo
     pip install -v -e .
 or using Pypi
