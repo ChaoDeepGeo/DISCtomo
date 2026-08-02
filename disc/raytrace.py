@@ -491,82 +491,129 @@ def compute_travel_times_sr(v_true, sources, receivers,dx, dy, nx, ny):
         ray_paths.append((paths.transpose()[:,0],paths.transpose()[:,1]))
             
     travel_times = np.array(travel_times)
-
-    #     f=RectBivariateSpline(y,x,T)
-
-        
-    #     travel_times.append(f(ry,rx).flatten()[0])  # FMM travel time at receiver     
-            
-    #     ## Ray tracing begins
-    #     tz,tx = np.gradient(T)
-        
-    #     ## trace one ray (source and receiver locations are in decimal grids)
-    #     stationx=(sx-x0)/dx+1
-    #     stationz=(sy-y0)/dy+1
-    #     eventx=(rx-x0)/dx+1
-    #     eventz=(ry-y0)/dy+1
-
-    #     ## key function: stream2d
-    #     paths,nrays=stream2d_continent(-tx,-tz, stationx, stationz, step=0.1, maxvert=10000)
-    #     ## trim the rays (remove redundant rays around source) and add the source point
-    #     paths=trimrays_continent(paths,start_points=np.array([eventx,eventz]),T=0.2)
-
-    #     ray_paths.append(((paths[0]-1)*dx+x0,(paths[1])*dy+y0))
-                
-    #             # travel_times.append(T[round(ry/dy), round(rx/dx)])  # FMM travel time at receiver
-	
-    #             # paths=ray2d2(T,np.array([sx,sy]),np.array([rx,ry]),ax=[0,dx,nx],ay=[0,dy,ny],step=stepa)
-    #             # ray_paths.append((paths.transpose()[:,0],paths.transpose()[:,1]))
-    
-    # travel_times = np.array(travel_times)
-    
     
     return travel_times, ray_paths
 
 
- 
-        
-        
-
-
-def build_ray_matrix_sr(ray_paths, x0,y0,dx, dy, nx, ny, ifraycorr=True):
+from typing import Sequence, Tuple
+def lonlat_to_cartesian_grid(
+    longitudes: Sequence[float],
+    latitudes: Sequence[float],
+    lon0: float,
+    lat0: float,
+    dx: float,
+    dy: float,
+    radius: float = 6371.0088,
+) -> Tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
     """
-    Build the ray matrix A for a set of ray paths in a 2D grid.
-    
-    Parameters:
-    ray_paths : list of tuples
-        List of ray paths for each source-receiver pair.
-    dx : float
-        Grid spacing in the x-direction.
-    dy : float
-        Grid spacing in the y-direction.
-    nx : int
-        Number of grid points in the x-direction.
-    ny : int
-        Number of grid points in the y-direction.
-    ifraycorr : bool, optional
-        If True, conduct ray path contribution correction
-    
-    Returns:
-    A : sparse matrix
-        The ray matrix (shape: n_rays x n_cells).
-    """
+    Convert longitude/latitude coordinates to local Cartesian coordinates
+    and corresponding grid indices.
 
-    n_rays = len(ray_paths)
-    n_cells = nx*ny
-    A = lil_matrix((n_rays, n_cells)) #A is a sparse ray-path matrix
+    Parameters
+    ----------
+    longitudes, latitudes
+        Station longitude and latitude in degrees.
+    lon0, lat0
+        Geographic coordinates corresponding to Cartesian origin (0, 0),
+        in degrees.
+    dx, dy
+        Cartesian grid intervals in km.
 
-    for i, (ray_x, ray_y) in enumerate(ray_paths):
-        for x, y in zip(ray_x, ray_y):
-            ix, iy = int(round((x-x0)/dx)), int(round((y-y0)/dy))
-            idx = iy*nx + ix
-            A[i, idx] += 1.0*dx  # Each cell contributes 1*dx to travel path
+    Returns
+    -------
+    x_km, y_km
+        Local Cartesian coordinates in km.
+        x is positive eastward and y is positive northward.
+    ix, iy
+        Nearest Cartesian grid-point indices.
+    """
+    lon = np.asarray(longitudes, dtype=np.float64)
+    lat = np.asarray(latitudes, dtype=np.float64)
 
+    if lon.shape != lat.shape:
+        raise ValueError(
+            f"Longitude and latitude shapes differ: "
+            f"{lon.shape} versus {lat.shape}"
+        )
+
+    if dx <= 0 or dy <= 0:
+        raise ValueError("dx and dy must be positive.")
+
+  
+
+    earth_radius_km = radius ###this is the real radius of the earth, used to convert lat/lon to km
+
+
+    # Keep longitude differences in [-180, 180) degrees.
+    delta_lon_deg = (lon - lon0 + 180.0) % 360.0 - 180.0
+    delta_lat_deg = lat - lat0
+
+    delta_lon_rad = np.deg2rad(delta_lon_deg)
+    delta_lat_rad = np.deg2rad(delta_lat_deg)
+    lat0_rad = np.deg2rad(lat0)
+
+    x_km = earth_radius_km * np.cos(lat0_rad) * delta_lon_rad
+    y_km = earth_radius_km * delta_lat_rad
+
+    # Nearest grid-point indices.
+    ix = np.rint(x_km / dx).astype(np.int64)
+    iy = np.rint(y_km / dy).astype(np.int64)
+
+    return x_km, y_km, ix, iy
+
+def cartesian_to_lonlat(
+    x_km: Sequence[float],
+    y_km: Sequence[float],
+    lon0: float,
+    lat0: float,
+) -> Tuple[np.ndarray, np.ndarray]:
     """
-    A is a sparse matrix, but some cells may be counted multiple times if the ray passes through 
-    them more than once. This line ensures that the maximum contribution from any cell is capped at 1*dx.
+    Convert local Cartesian coordinates in km back to longitude and latitude.
+
+    Parameters
+    ----------
+    x_km, y_km
+        Cartesian coordinates in km.
+        Positive x points east and positive y points north.
+
+    lon0, lat0
+        Longitude and latitude corresponding to Cartesian origin (0, 0),
+        in degrees.
+
+    Returns
+    -------
+    longitudes, latitudes
+        Geographic coordinates in degrees.
     """
-    if ifraycorr:
-        A[(A>1.0*dx*1)]=1.0*dx 
-    
-    return A
+    x_km = np.asarray(x_km, dtype=np.float64)
+    y_km = np.asarray(y_km, dtype=np.float64)
+
+    if x_km.shape != y_km.shape:
+        raise ValueError(
+            f"x_km and y_km must have the same shape, "
+            f"but got {x_km.shape} and {y_km.shape}."
+        )
+
+    earth_radius_km = 6371.0088
+    lat0_rad = np.deg2rad(lat0)
+
+    if abs(np.cos(lat0_rad)) < 1e-12:
+        raise ValueError(
+            "Longitude conversion is unstable near the poles."
+        )
+
+    delta_lat_rad = y_km / earth_radius_km
+    delta_lon_rad = (
+        x_km /
+        (earth_radius_km * np.cos(lat0_rad))
+    )
+
+    latitudes = lat0 + np.rad2deg(delta_lat_rad)
+    longitudes = lon0 + np.rad2deg(delta_lon_rad)
+
+    # Normalize longitude into [-180, 180)
+    longitudes = (
+        longitudes + 180.0
+    ) % 360.0 - 180.0
+
+    return longitudes, latitudes
