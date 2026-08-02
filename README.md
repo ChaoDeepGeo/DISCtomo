@@ -192,18 +192,6 @@ surface_3D notebook
 ---
 
 
-
-## Installation
-
-To set up the environment, run:
-
-```bash
-conda env create -f environment.yml
-conda activate your_env_name
-```
-
----
-
 ## Reference 
 
 > Li and Chen, 2026, DISCtomo: A Python package for direct smoothness constrained seismic traveltime tomography and uncertainty analysis, Seismica, TBD, TBD, TBD.
