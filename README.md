@@ -145,7 +145,7 @@ surface_passive notebook
 </p>
 
 <p align="center">
-  <b>Example 6.</b> Inversion result comparison of 3D model for passive sources. (a) Real 2D model. (b) Traced trajectories of based on (a). (c) Initial 2D model. (d) Inverted 2D model via DISC method.  The figure can be reproduced using the
+  <b>Example 6.</b> Inversion result comparison of 3D model for passive sources. (a) Real 2D model. (b) Traced trajectories based on (a). (c) Initial 2D model. (d) Inverted 2D model via DISC method.  The figure can be reproduced using the
 <a href="https://github.com/ChaoDeepGeo/DISCtomo/blob/main/notebook/main_continent.ipynb">
 continent notebook
 </p>
