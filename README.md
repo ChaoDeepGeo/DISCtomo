@@ -138,6 +138,21 @@ surface_passive notebook
 </p>
 
 <p align="center">
+<img
+  src="https://raw.githubusercontent.com/ChaoDeepGeo/DISCtomo/main/Figure/continent.png"
+  width="850"
+   />  
+</p>
+
+<p align="center">
+  <b>Example 6.</b> Inversion result comparison of 3D model for passive sources. (a) Real 2D model. (b) Traced trajectories of based on (a). (c) Initial 2D model. (d) Inverted 2D model via DISC method.  The figure can be reproduced using the
+<a href="https://github.com/ChaoDeepGeo/DISCtomo/blob/main/notebook/main_continent.ipynb">
+continent notebook
+</p>
+
+
+
+<p align="center">
    <img
   src="https://raw.githubusercontent.com/ChaoDeepGeo/DISCtomo/main/Figure/syn3dinv.png"
   width="850"
@@ -146,7 +161,7 @@ surface_passive notebook
 </p>
 
 <p align="center">
-  <b>Example 6.</b> Inversion result comparison of 3D model for activate sources. (a) Real 3D model. (b) Initial 3D model. (c) Inverted 3D model via DISC method. The figure can be reproduced using the
+  <b>Example 7.</b> Inversion result comparison of 3D model for activate sources. (a) Real 3D model. (b) Initial 3D model. (c) Inverted 3D model via DISC method. The figure can be reproduced using the
 <a href="https://github.com/ChaoDeepGeo/DISCtomo/blob/main/notebook/main_3Dmodel.ipynb">
 crosswell_3D notebook
   </a>.
@@ -160,10 +175,11 @@ crosswell_3D notebook
 </p>
 
 <p align="center">
-  <b>Example 7.</b> Inversion result comparison of 3D model for passive sources. (a) Real 3D model. (b) Initial 3D model. (c) Inverted 3D model via DISC method.  The figure can be reproduced using the
+  <b>Example 8.</b> Inversion result comparison of 3D model for passive sources. (a) Real 3D model. (b) Initial 3D model. (c) Inverted 3D model via DISC method.  The figure can be reproduced using the
 <a href="https://github.com/ChaoDeepGeo/DISCtomo/blob/main/notebook/main_3Dmodel_passive.ipynb">
 surface_3D notebook
 </p>
+
 
 <p align="center">
      <img
@@ -173,7 +189,7 @@ surface_3D notebook
 </p>
 
 <p align="center">
-  <b>Example 8.</b> Generated initial particles used for SVGD DISC inverison.
+  <b>Example 9.</b> Generated initial particles used for SVGD DISC inverison.
 </p>
 
 
@@ -185,7 +201,7 @@ surface_3D notebook
 </p>
 
 <p align="center">
-  <b>Example 9.</b> (a) Real checkerboard model, (b) Estimated Vp mean value distribution using SVGD DISC, and (c) Estimated Vp std map (uncertainty distribution). Higher std value means more uncertainties.
+  <b>Example 10.</b> (a) Real checkerboard model, (b) Estimated Vp mean value distribution using SVGD DISC, and (c) Estimated Vp std map (uncertainty distribution). Higher std value means more uncertainties.
 </p>
 
 
