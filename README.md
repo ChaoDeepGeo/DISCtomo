@@ -189,7 +189,9 @@ surface_3D notebook
 </p>
 
 <p align="center">
-  <b>Example 9.</b> Generated initial particles used for SVGD DISC inverison.
+  <b>Example 9.</b> Generated initial particles used for SVGD DISC inverison. The figure can be reproduced using the
+<a href="https://github.com/ChaoDeepGeo/DISCtomo/blob/main/notebook/main_checkboarder_SVGD.ipynb">
+SVGD notebook
 </p>
 
 
@@ -201,7 +203,9 @@ surface_3D notebook
 </p>
 
 <p align="center">
-  <b>Example 10.</b> (a) Real checkerboard model, (b) Estimated Vp mean value distribution using SVGD DISC, and (c) Estimated Vp std map (uncertainty distribution). Higher std value means more uncertainties.
+  <b>Example 10.</b> (a) Real checkerboard model, (b) Estimated Vp mean value distribution using SVGD DISC, and (c) Estimated Vp std map (uncertainty distribution). Higher std value means more uncertainties. The figure can be reproduced using the
+<a href="https://github.com/ChaoDeepGeo/DISCtomo/blob/main/notebook/main_checkboarder_SVGD.ipynb">
+SVGD notebook
 </p>
 
 
